@@ -52,21 +52,45 @@ button{
     outline-color: transparent; /*Hides the defualt outline on buttons even when changed to High contrast style browser */
 }
 .container{
-    max-width: 1200px;
+    max-width: 1350px;
 }
 
 /* Grid */
 
 .grid{
-    min-height: 100vh;
-    display: grid;
+    display: flex;
     place-items: center;
     margin: auto;
+    flex-direction: column-reverse;
 }
 
 @media screen and (min-width: 768px) {
 .grid--1x2{
     grid-template-columns: repeat(2, 1fr); 
+    flex-direction: row;
     }
     
+}
+
+/* Stats Card */
+
+.statsCard__heading{
+    font-size: 4rem;
+    color: var(--color-mainHeadingStats);
+    text-align: center;
+}
+.statsCard{
+    background: var(--color-cardBackground);
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+.statsCard__Content{
+    padding: 6rem;
+    margin-right: 50px;
+}
+
+.statsCard__text{
+    color: var(--color-mainParagraphy);
 }
