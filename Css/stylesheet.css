@@ -14,7 +14,6 @@ html{
   --color-statsHeading:hsla(0, 0%, 100%, 0.6);
   --color-mainParagraphy:hsla(0, 0%, 100%, 0.75)
 }
-
 body{
     font-size: 2.4rem;
     line-height: 1.5;
