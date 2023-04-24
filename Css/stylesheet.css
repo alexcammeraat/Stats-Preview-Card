@@ -18,7 +18,7 @@ html{
 body{
     font-size: 2.4rem;
     line-height: 1.5;
-    background: var(--Pale-blue);
+    background: var(--color-mainBackground);
 }
 
 h1, h2, h3 {
@@ -47,9 +47,9 @@ p{
 
 img, picture, svg, video{ /* used to make all these elements responsive*/
     display: block;
-    width: 100%; /*changed it from max-width to width to allow the image srink better.*/
-    object-fit: cover;
-    min-width: 500px;
+     width: 100%;
+    
+  
 
 }
     
@@ -59,15 +59,16 @@ button{
 .container{
     max-width: 1300px;
     min-width: 500px;
-    position: absolute;
-
+    position: relative;
+    margin: 20vh auto;
+    
+    
 }
 /* Grids */
 
 .grid{
     display: flex;
     flex-direction: column-reverse;
-
 }
 
 .stats__grid{
@@ -135,7 +136,10 @@ button{
 }
 
 .statsCard__img{
-    background-image: hsl(277, 64%, 61%) ;
+   
+    object-fit: cover;
+    min-width: 500px;
+    background-color: rgba(170, 92, 219, 0.5) ;
 }
 
 @media screen and (min-width:1024px) {
